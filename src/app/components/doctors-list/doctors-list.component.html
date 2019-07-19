@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-header">
+    <h3>Doctors List</h3>
+  </div>
+
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>photo</th>
+          <th>speciality</th>
+          <th>lastName</th>
+          <th>firstName</th>
+          <th>email</th>
+          <th>gsmNumber</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of data">
+          <td><img [src]=item.photo height="20%"></td>
+          <td>{{item.speciality}}</td>
+          <td>{{item.lastName}}</td>
+          <td>{{item.firstName}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.gsmNumber}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="card-footer text-muted">
+    Footer
+  </div>
+</div>
