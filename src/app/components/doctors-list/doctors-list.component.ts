@@ -10,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class DoctorsListComponent implements OnInit {
 
   data: Doctor[];
+  width: number = 100;
+  height: number = 50;
 
   constructor(private service: DoctorsService) { }
 
