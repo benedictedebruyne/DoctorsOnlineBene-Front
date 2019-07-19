@@ -1,3 +1,5 @@
+import { DoctorDetailsComponent } from './components/doctor-details/doctor-details.component';
+
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { DoctorsListComponent } from './components/doctors-list/doctors-list.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
@@ -8,6 +10,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {path: '', component: WelcomeComponent, pathMatch: 'full'},
   {path: 'list', component: DoctorsListComponent},
+  {path: 'details/:id', component: DoctorDetailsComponent},
   {path: '**', component: NotFoundComponent}
 ];
 
