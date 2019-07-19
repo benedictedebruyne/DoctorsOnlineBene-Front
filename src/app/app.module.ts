@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { DoctorDetailsComponent } from './components/doctor-details/doctor-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     DoctorsListComponent,
     WelcomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DoctorDetailsComponent
+
   ],
   imports: [
     BrowserModule,
