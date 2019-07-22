@@ -1,1 +1,48 @@
-<p>doctor-details works!</p>
+<div class="card offset-1 col-md-10">
+  <div class="card-header bg-info text-white">
+    <h2>Details for {{ doctor?.lastName }} </h2>
+  </div>
+  <div class="card-body">
+    <div class='row'>
+      <div class='col-md-4'>
+        <img class='float-center img-responsive' [style.width.px]='150' [style.margin.px]='2'
+          [src]='doctor?.photo' [title]='doctor?.lastName' />
+      </div>
+      <div class='col-md-8'>
+        <div class='row'>
+          <div class='col-md-5'>Last Name:</div>
+          <div class='col-md-7'>{{doctor?.lastName}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-5'>First Name:</div>
+          <div class='col-md-7'>{{doctor?.firstName}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-5'>Speciality:</div>
+          <div class='col-md-7'>{{doctor?.speciality}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-5'>GSM number:</div>
+          <div class='col-md-7'>{{doctor?.gsmNumber}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-5'>Email:</div>
+          <div class='col-md-7'>
+            {{doctor?.email}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class='card col-md-12'>
+        <a name="" id="" class="btn btn-primary"
+        (click)="addToCart()" routerLinkActive="router-link-active"
+        role="button" >Take an appointment</a>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer text-muted">
+    <a class='btn btn-lg' (click)='onBack()' style='width:100px'>
+      <i class="fa fa-angle-double-left"></i> Back
+    </a>
+  </div>
+</div>

@@ -11,6 +11,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { DoctorDetailsComponent } from './components/doctor-details/doctor-details.component';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DoctorDetailsComponent } from './components/doctor-details/doctor-detai
     DoctorsListComponent,
     WelcomeComponent,
     NotFoundComponent,
-    DoctorDetailsComponent
+    DoctorDetailsComponent,
+    CartComponent
 
   ],
   imports: [
